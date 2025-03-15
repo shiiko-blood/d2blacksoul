@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blacksoul</title>
+    <link rel="stylesheet" href="blacksoul.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <div class="menu-container">
+            <nav class="menu">
+                <ul class="menu-items">
+                    
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descargas.html">descargas</a></li>
+                    <li><a href="palabras-runicas.html">palabras runicas</a></li>
+                    <li><a href="item.html">item unicos</a></li>
+                    <li><a href="guias.html">guias</a></li>
+                    <li><a href="CuboHoradrico.html">Cubo Horadric</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor-principal">
+        <div class="contenedor-boxes">
+            <div class="box-contenedor1">
+                <div class="titulo-box1">
+                    Información del Parche
+                </div>
+                <div class="box-informacion1">
+                    <div class="parche">
+                        <h2>Parche 6.1.0.2 - 26/02/2025 (SOLO SERVER, NO CLIENTE)</h2>
+                        <div class="calificacion">
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella vacia">&#9733;</span>
+                            <span class="estrella vacia">&#9733;</span>
+                        </div>
+                        <ul class="detalles">
+                            <li><strong>Modificación a Runewords de Javalina de Amazona (Thunder - Plague):</strong> Se les agregó un stat oculto para que sean "infinitas".</li>
+                            <li><strong>Recetas de Cubo:</strong> Se agregaron otras fórmulas del cubo anteriores que se habían eliminado en la versión 6.0 (items stackeables).</li>
+                            <li><strong>Poción de Experiencia:</strong> Modificada para ser utilizable hasta lv96. Con 3 pociones se sube de lv1 a lv100.</li>
+                            <li><strong>Sinergias de Furia de Relámpagos:</strong> Se modificaron, subiendo el daño mínimo a la habilidad.</li>
+                            <li><strong>Teletransportación en la Cámara de Tal Rasha:</strong> Ahora se pueden atravesar muros para facilitar el rush.</li>
+                            <li><strong>Nuevo Mapa de Vacas:</strong> Introducción de un "nuevo" mapa con un jefe nuevo que dropea 5 items distintos necesarios para abrir las Ruinas Nephalem.</li>
+                        </ul>
+                        <p><strong>NOTA:</strong> Sinergias y daño real de algunas habilidades no visibles por ahora.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-contenedor2">
+                <div class="titulo-box2">
+                    Informacion del Servidor
+                </div>
+                <div class="box-informacion2">
+                    <div class="parche">
+                        <h2>Servidor de Blacksoul</h2>
+                        <ul class="detalles2">
+                            <strong>Ip del Servidor:</strong> 
+                        </ul>
+                        <p><strong id="textoACopiar" onclick="copiarTexto()" style="cursor: pointer; color:rgba(255, 255, 0, 0.749);">blacksoul12345</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bloque-1">
+        <img src="imagenes/inter.png" alt="">
+    </div>
+
+    <div class="contenedor-rules">
+        <div class="box-rules">
+            <div class="box-rules1">
+                <div class="titulo-rules">
+                    Reglas del Servidor
+                </div>
+                <div class="rules-informacion2">
+                    <div class="sub-rules">
+                        <h3>Reglas Generales D2 Blacksoul</h3>
+                        <div class="calificacion">
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella llena">&#9733;</span>
+                            <span class="estrella vacia">&#9733;</span>
+                            <span class="estrella vacia">&#9733;</span>
+                        </div>
+                        
+                        <ul class="detalles-rules">
+                            <li><strong>En este espacio NO estan permitidas las expresiones de odio:</strong> tales como la homofobia, el racismo, el fanatismo religioso y otras expresiones dignas de la estupidez humana. Si vienes con ese tipo de intenciones".</li>
+                            <p></p>
+                            <li><strong>Respetar al staff,</strong> incluyendo a los usuarios.</li>
+                            <p></p>
+                            <li><strong>Cualquier tipo de programa o plugin anexo al juego no autorizado por el staff esta completamente prohibido:</strong> se realizara ban permanente de manera  inmediata a todas las cuentas relacionadas con el usuaro.</li>
+                            <p></p>
+                            <li><strong>El scam de items, robo de items o cuentas asi como cualquier otra acción similar esta prohibida</strong> Si otra persona ajena a ti tiene la password de tus cuentas, es tu problema y no del staff.</li>
+                            <p></p>
+                            <li><strong>Queda prohibido cualquier tipo de spam de otros servidores</strong> Nos gusta la sana competencia entre servers, y el uso de spam tendra sancion inmediata.</li>
+                            <p></p>
+                            <li><strong>Estas reglas quedan dispuestas tanto para el server de Discord asi como ingame</strong> </li>
+                            <p></p>
+                            <li><strong>Cualquier otra regla que no esté definida en este reglamento:</strong> queda a criterio del admin tanto en gravedad como en sancion</li>
+                            <p></p>
+                            <p></p>
+                            <p>ATTE. IceHammer (admin)</strong> </p>
+                        </ul>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer container">
+        <h2 class="titulo-contacto">contacto</h2>
+        <div class="footer-content">
+            <form id="contact-form">
+                <input class="campo" type="text" id="nombre" placeholder="Nombre" required>
+                <input class="campo" type="email" id="email" placeholder="Email" required>
+                <input type="submit" class="btn-2" value="Enviar">
+            </form>
+        </div>
+        <div class="footer-txt">
+            <p>BY SHIIKO</p>
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+  
+</body>
+</html>

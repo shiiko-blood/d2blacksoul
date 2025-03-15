@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palabras runicas</title>
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blacksoul</title>
+        <link rel="stylesheet" href="equipo.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo"></a>
+            <div class="menu-container">
+                <nav class="menu">
+                    <ul class="menu-items">
+                        
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="descargas.html">descargas</a></li>
+                        <li><a href="palabras-runicas.html">palabras runicas</a></li>
+                        <li><a href="item.html">item unicos</a></li>
+                        <li><a href="guias.html">guias</a></li>
+                        <li><a href="CuboHoradrico.html">Cubo Horadric</a></li>
+    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    
+    <section class="section-container">
+        <section id="armaduras">
+            <h2 class="titulo-equipo">Armaduras</h2>
+        </section>
+        <div class="buscador-container">
+            <input type="text" id="buscador" placeholder="🔍 Buscar" onkeyup="buscarEscudos()">
+        </div>
+            <div class="runewords-grid">
+                <div class="runeword-box">
+                    <div class="title">Zarza</div>
+                    <div class="runes">
+                        <img src="runas/runeRal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ral</span> • 
+                        <img src="runas/runeOhm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ohm</span> • 
+                        <img src="runas/runeSur_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Sur</span> • 
+                        <img src="runas/runeEth_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Eth</span>
+                    </div>
+                    <div class="requirements">Req level: 61</div>
+                    <div class="requirements">Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li>Nivel <span class="resaltado">20</span> del aura Espinas cuando estás equipado</li>
+                            <li><span class="resaltado">+50%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+31%</span> para Daño de habilidad de veneno</li>
+                            <li><span class="resaltado">+14%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+300</span> Defensa</li>
+                            <li>Aumenta el maná máximo <span class="resaltado">5%</span></li>
+                            <li>Regenerar maná <span class="resaltado">15%</span></li>
+                            <li><span class="resaltado">+5%</span> a la resistencia mínima al fuego</li>
+                            <li>Resistencia al fuego <span class="resaltado">+30%</span></li>
+                            <li>Resistencia al veneno <span class="resaltado">+100%</span></li>
+                            <li><span class="resaltado">+13</span> Vida después de cada muerte</li>
+                            <li>Nivel <span class="resaltado">13</span> Espíritu de púas (<span class="resaltado">33/33</span> cargas)</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/zarza.png')">
+                    
+                </div>       
+                <div class="runeword-box">
+                    <div class="title">Cadenas de Honor</div>
+                    <div class="runes">
+                        <img src="runas/runeDol_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Dol</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runeBer_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ber</span> • 
+                        <img src="runas/runeIst_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ist</span>
+                    </div>
+                    <div class="requirements">Req level: 63</div>
+                    <div class="requirements">Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+2</span> a todas las habilidades</li>
+                            <li><span class="resaltado">+200%</span> Daño a los demonios</li>
+                            <li><span class="resaltado">+100%</span> Daño a los muertos vivientes</li>
+                            <li><span class="resaltado">8%</span> Vida robada por impacto</li>
+                            <li><span class="resaltado">+84%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+20</span> de fuerza</li>
+                            <li>Repostar vida <span class="resaltado">+7</span></li>
+                            <li>Todas las Resistencias <span class="resaltado">65</span></li>
+                            <li>Daño reducido en <span class="resaltado">8%</span></li>
+                            <li><span class="resaltado">25%</span> más posibilidades de conseguir un objeto mágico</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/cadenas.png')">
+                </div>       
+                <div class="runeword-box">
+                    <div class="title">Coacción</div>
+                    <div class="runes">
+                        <img src="runas/runeshael_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Shael</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runeThul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Thul</span>
+                    </div>
+                    <div class="requirements">Req level: 47</div>
+                    <div class="requirements">Aramaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+40%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+11%</span> Daño mejorado</li>
+                            <li>Añade <span class="resaltado">37-133</span> de daño de frío</li>
+                            <li><span class="resaltado">15%</span> Posibilidad de golpe triturador</li>
+                            <li><span class="resaltado">33%</span> Posibilidad de heridas abiertas</li>
+                            <li><span class="resaltado">+106%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">-20%</span> Drenaje de resistencia más lento</li>
+                            <li>Resistencia al frío <span class="resaltado">+45%</span></li>
+                            <li>Resistencia a los rayos <span class="resaltado">+15%</span></li>
+                            <li>Resistencia al fuego <span class="resaltado">+15%</span></li>
+                            <li>Resistencia al veneno <span class="resaltado">+15%</span></li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/coaccion.png')">
+                </div>       
+                <div class="runeword-box">
+                    <div class="title">Corazón de León</div>
+                    <div class="runes">
+                        <img src="runas/runeHel_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Hel</span> • 
+                        <img src="runas/runeLum_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lum</span> • 
+                        <img src="runas/runeFal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Fal</span>
+                    </div>
+                    <div class="requirements">Req level: 41</div>
+                    <div class="requirements">Armadura de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+20%</span> Daño mejorado</li>
+                            <li><span class="resaltado">+25</span> de fuerza</li>
+                            <li><span class="resaltado">+15</span> de destreza</li>
+                            <li><span class="resaltado">+20</span> de vitalidad</li>
+                            <li><span class="resaltado">+10</span> de energía</li>
+                            <li><span class="resaltado">+50</span> de vida</li>
+                            <li>Todas las Resistencias <span class="resaltado">30</span></li>
+                            <li>Requisitos <span class="resaltado">-15%</span></li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/corazon.png')">
+                </div>       
+                <div class="runeword-box">
+                    <div class="title">Enigma</div>
+                    <div class="runes">
+                        <img src="runas/runeJah_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Jah</span> • 
+                        <img src="runas/runeIth_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ith</span> • 
+                        <img src="runas/runeBer_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ber</span>
+                    </div>
+                    <div class="requirements">Req level: 65</div>
+                    <div class="requirements">Armadura de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+2</span> a todas las habilidades</li>
+                            <li><span class="resaltado">+45%</span> Correr/Andar más rápido</li>
+                            <li><span class="resaltado">+1</span> para Teletransportador</li>
+                            <li><span class="resaltado">+708</span> Defensa</li>
+                            <li><span class="resaltado">+74</span> de fuerza muerto viviente</li>
+                            <li>Aumenta la vida máxima <span class="resaltado">5%</span></li>
+                            <li>Daño reducido en <span class="resaltado">8%</span></li>
+                            <li><span class="resaltado">+14</span> Vida después de cada muerte</li>
+                            <li><span class="resaltado">15%</span> El daño infligido repercute en el maná</li>
+                            <li><span class="resaltado">99%</span> más posibilidades de conseguir un objeto mágico muerto viviente</li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/enigma.png')">
+                </div>       
+                <div class="runeword-box">
+                    <div class="title">Fortaleza</div>
+                    <div class="runes">
+                        <img src="runas/runeEl_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">El</span> • 
+                        <img src="runas/runeSol_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Sol</span> • 
+                        <img src="runas/runedol_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Dol</span> • 
+                        <img src="runas/runeLo_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lo</span>
+                    </div>
+                    <div class="requirements">Req level: 61</div>
+                    <div class="requirements">Armas y Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">20%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Armadura glacial al recibir un azote</li>
+                            <li><span class="resaltado">+25%</span> Velocidad de lanzamiento mayor</li>
+                            <li><span class="resaltado">+214%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+15</span> Defensa</li>
+                            <li><span class="resaltado">+99</span> de vida muerto viviente</li>
+                            <li>Repostar vida <span class="resaltado">+7</span></li>
+                            <li><span class="resaltado">+5%</span> a la resistencia máxima a los relámpagos</li>
+                            <li>Todas las Resistencias <span class="resaltado">+28</span></li>
+                            <li>Daño reducido en <span class="resaltado">7</span></li>
+                            <li><span class="resaltado">12%</span> El daño infligido repercute en el maná</li>
+                            <li><span class="resaltado">+1</span> al Radio de luz</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/fortaleza.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Hueso</div>
+                    <div class="runes">
+                        <img src="runas/runeSol_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Sol</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span>
+                    </div>
+                    <div class="requirements">Req level: 47</div>
+                    <div class="requirements">Armadura de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">15%</span> de posibilidades de lanzar el nivel <span class="resaltado">10</span> Armadura de hueso al recibir un azote</li>
+                            <li><span class="resaltado">15%</span> de posibilidades de lanzar el nivel <span class="resaltado">10</span> Lanza ósea al azotar</li>
+                            <li><span class="resaltado">+2</span> a los niveles de habilidad del nigromante</li>
+                            <li><span class="resaltado">+157</span> de maná</li>
+                            <li>Todas las Resistencias <span class="resaltado">30</span></li>
+                            <li>Daño reducido en <span class="resaltado">7</span></li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/hueso.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Humo</div>
+                    <div class="runes">
+                        <img src="runas/runeNef_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Nef</span> • 
+                        <img src="runas/runeLum_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lum</span>
+                    </div>
+                    <div class="requirements">Req level: 37</div>
+                    <div class="requirements">Armaduras  de 2 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+20%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+75%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+280</span> Defensa contra Misil</li>
+                            <li><span class="resaltado">+10</span> de energía</li>
+                            <li>Todas las Resistencias <span class="resaltado">50</span></li>
+                            <li><span class="resaltado">-1</span> al Radio de luz</li>
+                            <li>Nivel <span class="resaltado">6</span> Debilitante (<span class="resaltado">18/18</span> cargas)</li>
+                            <li>Engarzado (<span class="resaltado">2</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/humo.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Ilustración</div>
+                    <div class="runes">
+                        <img src="runas/runepul_ticon.png" alt="Pul" class="rune-img">
+                        <span class="resaltado-rune">pul</span> • 
+                        <img src="runas/runeral_ticon.png" alt="ral" class="rune-img">
+                        <span class="resaltado-rune">Ral</span> • 
+                        <img src="runas/runeSol_ticon.png" alt="Sol" class="rune-img">
+                        <span class="resaltado-rune">Sol</span>
+                    </div>
+                    <div class="requirements">Req level: 45</div>
+                    <div class="requirements">armaduras de 2 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Llamarada al recibir un azote</li>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Bola de fuego al azotar</li>
+                            <li><span class="resaltado">+2</span> a los niveles de habilidad de la hechicera</li>
+                            <li><span class="resaltado">+1</span> para Calor</li>
+                            <li><span class="resaltado">+30%</span> Defensa perfeccionada</li>
+                            <li>Resistencia al fuego <span class="resaltado">+30%</span></li>
+                            <li>Daño reducido en <span class="resaltado">7</span></li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/illustracion.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Lluvia</div>
+                    <div class="runes">
+                        <img src="runas/runeOrt_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ort</span> • 
+                        <img src="runas/runeMal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Mal</span> • 
+                        <img src="runas/runeIth_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ith</span>
+                    </div>
+                    <div class="requirements">Req level: 49</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Armadura de ciclón al recibir un azote</li>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Torbellino al azotar</li>
+                            <li><span class="resaltado">+2</span> para habilidades druidas</li>
+                            <li><span class="resaltado">+135</span> de maná</li>
+                            <li>Resistencia a los rayos <span class="resaltado">+30%</span></li>
+                            <li>Daño de magia reducido en <span class="resaltado">7</span></li>
+                            <li><span class="resaltado">15%</span> El daño infligido repercute en el maná</li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/lluvia.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Melancolía</div>
+                    <div class="runes">
+                        <img src="runas/runeFal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Fal</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runePul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Pul</span>
+                    </div>
+                    <div class="requirements">Req level: 47</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">15%</span> de posibilidades de lanzar el nivel <span class="resaltado">3</span> Visión borrosa al recibir un azote</li>
+                            <li><span class="resaltado">+10%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+208%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+10</span> de fuerza</li>
+                            <li>Todas las Resistencias <span class="resaltado">45</span></li>
+                            <li>Mitad de duración del congelamiento</li>
+                            <li><span class="resaltado">5%</span> El daño infligido repercute en el maná</li>
+                            <li><span class="resaltado">-3</span> al Radio de luz</li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/melancolia.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Mito</div>
+                    <div class="runes">
+                        <img src="runas/runeHel_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Hel</span> • 
+                        <img src="runas/runeAmn_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Amn</span> • 
+                        <img src="runas/runeNef_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Nef</span>
+                    </div>
+                    <div class="requirements">Req level: 25</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">1</span> Aullido al recibir un azote</li>
+                            <li><span class="resaltado">10%</span> de posibilidades de lanzar el nivel <span class="resaltado">1</span> Burla al azotar</li>
+                            <li><span class="resaltado">+2</span> a los niveles de habilidad del bárbaro</li>
+                            <li><span class="resaltado">+30</span> Defensa contra Misil</li>
+                            <li>Repostar vida <span class="resaltado">+16</span></li>
+                            <li>El atacante recibe el daño de <span class="resaltado">14</span></li>
+                            <li>Requisitos <span class="resaltado">-15%</span></li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/mito.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Paz</div>
+                    <div class="runes">
+                        <img src="runas/runeShael_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Sha</span> • 
+                        <img src="runas/runeThul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Thul</span> • 
+                        <img src="runas/runeAmn_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Amn</span>
+                    </div>
+                    <div class="requirements">Req level: 29</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">4%</span> de posibilidades de lanzar el nivel <span class="resaltado">5</span> Misiles lentos al recibir un azote</li>
+                            <li><span class="resaltado">2%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> valquiria al azotar</li>
+                            <li><span class="resaltado">+2</span> a los niveles de habilidad de la amazona</li>
+                            <li><span class="resaltado">+20%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+2</span> para Azote crítico</li>
+                            <li>Resistencia al frío <span class="resaltado">+30%</span></li>
+                            <li>El atacante recibe el daño de <span class="resaltado">14</span></li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/paz.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Pilar de fe</div>
+                    <div class="runes">
+                        <img src="runas/runeJah_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Jah</span> • 
+                        <img src="runas/runeOhm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ohm</span> • 
+                        <img src="runas/runeBer_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ber</span> • 
+                        <img src="runas/runeCham_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Cham</span>
+                    </div>
+                    <div class="requirements">Req level: 67</div>
+                    <div class="requirements">Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+2</span> a todas las habilidades</li>
+                            <li><span class="resaltado">+25%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+20.5%</span> Daño mejorado</li>
+                            <li><span class="resaltado">+104%</span> Daño a los demonios</li>
+                            <li><span class="resaltado">+159%</span> Defensa perfeccionada</li>
+                            <li>Aumenta la vida máxima <span class="resaltado">5%</span></li>
+                            <li><span class="resaltado">+99</span> de vida muerto viviente</li>
+                            <li><span class="resaltado">+5%</span> a la resistencia mínima al fuego</li>
+                            <li>Todas las Resistencias <span class="resaltado">40</span></li>
+                            <li>Daño reducido en <span class="resaltado">8%</span></li>
+                            <li>No puede congelarse</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/pilar.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Principio</div>
+                    <div class="runes">
+                        <img src="runas/runeRal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ral</span> • 
+                        <img src="runas/runeGul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Gul</span> • 
+                        <img src="runas/runeEld_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Eld</span>
+                    </div>
+                    <div class="requirements">Req level: 53</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">100%</span> de posibilidades de lanzar el nivel <span class="resaltado">5</span> Rayo sagrado al azotar</li>
+                            <li><span class="resaltado">+2</span> a los niveles de habilidad del paladín</li>
+                            <li><span class="resaltado">+50%</span> Daño a los muertos vivientes</li>
+                            <li><span class="resaltado">+100</span> de vida</li>
+                            <li><span class="resaltado">15%</span> Drenaje de resistencia más lento</li>
+                            <li><span class="resaltado">+5%</span> a la resistencia máxima al veneno</li>
+                            <li>Resistencia al fuego <span class="resaltado">+30%</span></li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/principio.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Prudencia</div>
+                    <div class="runes">
+                        <img src="runas/runeMal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Mal</span> • 
+                        <img src="runas/runeTir_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Tir</span>
+                    </div>
+                    <div class="requirements">Req level: 49</div>
+                    <div class="requirements">Armaduras de 2 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+25%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+141%</span> Defensa perfeccionada</li>
+                            <li>Todas las Resistencias <span class="resaltado">33</span></li>
+                            <li>Daño reducido en <span class="resaltado">3</span></li>
+                            <li>Daño de magia reducido en <span class="resaltado">17</span></li>
+                            <li><span class="resaltado">+2</span> al maná tras cada muerte</li>
+                            <li><span class="resaltado">+1</span> al Radio de luz</li>
+                            <li>Repara <span class="resaltado">1</span> de durabilidad en <span class="resaltado">4</span> segundos</li>
+                            <li>Engarzado (<span class="resaltado">2</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/prudencia.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Roca</div>
+                    <div class="runes">
+                        <img src="runas/runeShael_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Shael</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runePul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Pul</span> • 
+                        <img src="runas/runeLum_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lum</span>
+                    </div>
+                    <div class="requirements">Req level: 61</div>
+                    <div class="requirements">Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+60%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+250%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+300</span> Defensa contra Misil</li>
+                            <li><span class="resaltado">+10</span> de fuerza</li>
+                            <li><span class="resaltado">+10</span> de vitalidad</li>
+                            <li><span class="resaltado">+10</span> de energía</li>
+                            <li>Todas las Resistencias <span class="resaltado">15</span></li>
+                            <li>Nivel <span class="resaltado">16</span> Roca líquida (<span class="resaltado">80/80</span> cargas)</li>
+                            <li>Nivel <span class="resaltado">16</span> Gólem de arcilla (<span class="resaltado">16/16</span> cargas)</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/roca.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Riqueza</div>
+                    <div class="runes">
+                        <img src="runas/runeLem_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lem</span> • 
+                        <img src="runas/runeKo_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Ko</span> • 
+                        <img src="runas/runeTir_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Tir</span>
+                    </div>
+                    <div class="requirements">Req level: 43</div>
+                    <div class="requirements">Armaduras de 3 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+10</span> de destreza</li>
+                            <li><span class="resaltado">+2</span> al maná tras cada muerte</li>
+                            <li><span class="resaltado">300%</span> oro extra de los monstruos</li>
+                            <li><span class="resaltado">100%</span> más posibilidades de conseguir un objeto mágico</li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/riqueza.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Sigilo</div>
+                    <div class="runes">
+                        <img src="runas/runeTal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Tal</span> • 
+                        <img src="runas/runeEth_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Eth</span>
+                    </div>
+                    <div class="requirements">Req level: 25</div>
+                    <div class="requirements">Armaduras de 2 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+25%</span> Correr/Andar más rápido</li>
+                            <li><span class="resaltado">+25%</span> Velocidad de lanzamiento mayor</li>
+                            <li><span class="resaltado">+25%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+6</span> de destreza</li>
+                            <li>Regenerar maná <span class="resaltado">15%</span></li>
+                            <li><span class="resaltado">+15</span> Resistencia máxima</li>
+                            <li>Resistencia al veneno <span class="resaltado">+30%</span></li>
+                            <li>Daño de magia reducido en <span class="resaltado">3</span></li>
+                            <li>Engarzado (<span class="resaltado">2</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/sigilo.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Tiempo</div>
+                    <div class="runes">
+                        <img src="runas/runeLem_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lem</span> • 
+                        <img src="runas/runeFal_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Fal</span> • 
+                        <img src="runas/runeUm_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Um</span> • 
+                        <img src="runas/runeLo_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lo</span>
+                    </div>
+                    <div class="requirements">Req level: 61</div>
+                    <div class="requirements">armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">+1</span> a todas las habilidades</li>
+                            <li><span class="resaltado">+15%</span> Velocidad de lanzamiento mayor</li>
+                            <li><span class="resaltado">+1</span> para Teletransportador</li>
+                            <li><span class="resaltado">+65%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+10</span> de fuerza</li>
+                            <li>Aumenta el maná máximo <span class="resaltado">9%</span></li>
+                            <li><span class="resaltado">+5%</span> a la resistencia máxima a los relámpagos</li>
+                            <li>Todas las Resistencias <span class="resaltado">25</span></li>
+                            <li><span class="resaltado">50%</span> oro extra de los monstruos</li>
+                            <li><span class="resaltado">20%</span> más posibilidades de conseguir un objeto mágico</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/tiempo.png')">
+                    
+                    
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Traición</div>
+                    <div class="runes">
+                        <img src="runas/runeShael_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Shael</span> •  
+                        <img src="runas/runeThul_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Thul</span> • 
+                        <img src="runas/runeLem_ticon.png" alt="" class="rune-img">
+                        <span class="resaltado-rune">Lem</span>
+                    </div>
+                    <div class="requirements">Req level: 43</div>
+                    <div class="requirements">Armaduras de 4 socket</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Fundido al recibir un azote</li>
+                            <li><span class="resaltado">25%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Veneno al azotar</li>
+                            <li><span class="resaltado">+2</span> para habilidades asesinas</li>
+                            <li><span class="resaltado">+45%</span> Velocidad de ataque aumentada</li>
+                            <li><span class="resaltado">+20%</span> Recuperación de impacto más rápida</li>
+                            <li>Resistencia al frío <span class="resaltado">+30%</span></li>
+                            <li><span class="resaltado">50%</span> oro extra de los monstruos</li>
+                            <li>Engarzado (<span class="resaltado">3</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Armadura" onclick="abrirModal('armaduras/traicion.png')">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="boton-container">
+        <img src="imagenes/separador.png" alt="Ir al inicio" onclick="irAlInicio()">
+    </div>
+
+    <!-- Sección de Cascos -->
+    <section class="section-container">
+    <section id="cascos">
+        <h2 class="titulo-equipo">Cascos</h2>
+        
+    </section>
+    <div class="runewords-grid">
+        <div class="runeword-box">
+            <div class="title">Delirio</div>
+            <div class="runes">
+                <img src="runas/runeLem_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Lem</span> • 
+                <img src="runas/runeIst_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Ist</span> • 
+                <img src="runas/runeLo_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Lo</span>
+            </div>
+            <div class="requirements">Req level: 65</div>
+            <div class="requirements">La corona guardiana de 3 socket (sólo bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">1%</span> de posibilidades de lanzar el nivel <span class="resaltado">50</span> Delirio al recibir un azote</li>
+                    <li><span class="resaltado">6%</span> de posibilidades de lanzar el nivel <span class="resaltado">14</span> Ráfaga de mente al recibir un azote</li>
+                    <li><span class="resaltado">14%</span> de posibilidades de lanzar el nivel <span class="resaltado">13</span> Terror al recibir un azote</li>
+                    <li><span class="resaltado">11%</span> de posibilidades de lanzar el nivel <span class="resaltado">18</span> Confusión al azotar</li>
+                    <li><span class="resaltado">+2</span> a todas las habilidades</li>
+                    <li><span class="resaltado">+261</span> Defensa</li>
+                    <li><span class="resaltado">+10</span> de vitalidad</li>
+                    <li><span class="resaltado">50%</span> oro extra de los monstruos</li>
+                    <li><span class="resaltado">25%</span> más posibilidades de conseguir un objeto mágico</li>
+                    <li>Nivel <span class="resaltado">17</span> Atracción (<span class="resaltado">60/60</span> cargas)</li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Casco" onclick="abrirModal('equipo/delirio.png')">
+            
+
+        </div>
+        <div class="runeword-box">
+            <div class="title">Nadir</div>
+            <div class="runes">
+                <img src="runas/runeNef_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Nef</span> • 
+                <img src="runas/runeTir_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Tir</span>
+            </div>
+            <div class="requirements">Req level: 66</div>
+            <div class="requirements">La corona de 2 socket</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">+50%</span> Defensa perfeccionada</li>
+                    <li><span class="resaltado">+10</span> Defensa</li>
+                    <li><span class="resaltado">+30</span> Defensa contra Misil</li>
+                    <li><span class="resaltado">+5</span> de fuerza</li>
+                    <li><span class="resaltado">+2</span> al maná tras cada muerte</li>
+                    <li><span class="resaltado">-33%</span> oro extra de los monstruos</li>
+                    <li><span class="resaltado">-3</span> al Radio de luz</li>
+                    <li>Nivel <span class="resaltado">13</span> Capa de las sombras (<span class="resaltado">9/9</span> cargas)</li>
+                    <li>Engarzado (<span class="resaltado">2</span>)</li>
+                </ul>
+            </div>
+            <img src="equipo/nipRecurso 2.png" class="escudo-img" alt="Casco" onclick="abrirModal('equipo/nadir.png')">
+            
+            
+            
+        </div>
+        <div class="runeword-box">
+            <div class="title">Popular</div>
+            <div class="runes">
+                <img src="runas/runeOrt_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Ort</span> • 
+                <img src="runas/runeSol_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Sol</span>
+            </div>
+            <div class="requirements">Req level: 66</div>
+            <div class="requirements">La corona de 2 socket</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">+1</span> a todas las habilidades</li>
+                    <li><span class="resaltado">+10</span> de energía</li>
+                    <li>Resistencia a los rayos <span class="resaltado">+30%</span></li>
+                    <li>Daño reducido en <span class="resaltado">7</span></li>
+                    <li><span class="resaltado">+2</span> al maná tras cada muerte</li>
+                    <li><span class="resaltado">+2</span> al Radio de luz</li>
+                    <li>Engarzado (<span class="resaltado">2</span>)</li>
+                </ul>
+            </div>
+            <img src="equipo/nipRecurso 2.png" class="escudo-img" alt="Casco" onclick="abrirModal('equipo/popular.png')">
+            
+            
+        </div>             
+        <div class="runeword-box">
+            <div class="title">Pureza</div>
+            <div class="runes">
+                <img src="runas/runeCham_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Cham</span> • 
+                <img src="runas/runeSur_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Sur</span> • 
+                <img src="runas/runeEth_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Eth</span>
+            </div>
+            <div class="requirements">Req level: 67</div>
+            <div class="requirements">La corona guardiana de 3 socket (sólo bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">10%</span> de posibilidades de lanzar el nivel <span class="resaltado">7</span> Fundido al recibir un azote</li>
+                    <li><span class="resaltado">100%</span> de posibilidades de lanzar el nivel <span class="resaltado">15</span> Explosión de cadáveres al azotar</li>
+                    <li>Nivel <span class="resaltado">15</span> del aura Meditación cuando estás equipado (<span class="resaltado">10-15</span>)</li>
+                    <li><span class="resaltado">+2</span> a todas las habilidades (<span class="resaltado">1-2</span>)</li>
+                    <li><span class="resaltado">+17%</span> Velocidad de lanzamiento mayor (<span class="resaltado">10-20</span>)</li>
+                    <li><span class="resaltado">+3</span> para Grito de guerra (sólo bárbaro) (<span class="resaltado">3-4</span>)</li>
+                    <li><span class="resaltado">+175</span> de maná (<span class="resaltado">150-250</span>)</li>
+                    <li>Aumenta el maná máximo <span class="resaltado">5%</span></li>
+                    <li>Regenerar maná <span class="resaltado">15%</span></li>
+                    <li>No puede congelarse</li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Casco" onclick="abrirModal('equipo/pureza.png')">
+            
+            
+        </div>
+        <div class="runeword-box">
+            <div class="title">Resplandor</div>
+            <div class="runes">
+                <img src="runas/runeNef_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Nef</span> • 
+                <img src="runas/runeSol_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Sol</span> • 
+                <img src="runas/runeIth_ticon.png" alt="" class="rune-img">
+                <span class="resaltado-rune">Ith</span>
+            </div>
+            <div class="requirements">Req level: 65</div>
+            <div class="requirements">Corona guardiana de 3 socket (solo Bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">+75%</span> Defensa perfeccionada</li>
+                    <li><span class="resaltado">+39</span> Defensa contra Misil</li>
+                    <li><span class="resaltado">+10</span> a la vitalidad</li>
+                    <li><span class="resaltado">+10</span> a la energía</li>
+                    <li><span class="resaltado">+33</span> de maná</li>
+                    <li>Daño reducido en <span class="resaltado">7</span></li>
+                    <li>Daño de magia reducido en <span class="resaltado">3</span></li>
+                    <li><span class="resaltado">1.5%</span> El daño infligido repercute en el maná</li>
+                    <li><span class="resaltado">+5</span> al Radio de luz</li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Casco" onclick="abrirModal('equipo/resplandor.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Sueño (3)</div>
+            <div class="runes">
+                <img src="runas/runeIo_ticon.png" alt="Io" class="rune-img">
+                <span class="resaltado-rune">Io</span> •
+                <img src="runas/runeJah_ticon.png" alt="Jah" class="rune-img">
+                <span class="resaltado-rune">Jah</span> •
+                <img src="runas/runePul_ticon.png" alt="Pul" class="rune-img">
+                <span class="resaltado-rune">Pul</span>
+            </div>
+            <div class="requirements">Req level: 65</div>
+            <div class="requirements">Corona guardiana (solo Bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li><span class="resaltado">10%</span> de posibilidades de lanzar el nivel 15 Confusión al recibir un azote</li>
+                    <li>Nivel 15 del aura Golpe sagrado cuando estás equipado</li>
+                    <li><span class="resaltado">+28%</span> Recuperación de impacto más rápida (20-30)</li>
+                    <li><span class="resaltado">+30%</span> Defensa perfeccionada</li>
+                    <li><span class="resaltado">+180</span> Defensa (150-220)</li>
+                    <li><span class="resaltado">+10</span> a la vitalidad</li>
+                    <li>Aumenta la vida máxima <span class="resaltado">5%</span></li>
+                    <li><span class="resaltado">+61</span> de maná muerto viviente</li>
+                    <li>Todas las Resistencias <span class="resaltado">5</span> (5-20)</li>
+                    <li><span class="resaltado">20%</span> más posibilidades de conseguir un objeto mágico (12-25)</li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Corona Guardiana - Sueño" onclick="abrirModal('equipo/Sueño.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Tempestad</div>
+            <div class="runes">
+                <img src="runas/runeGul_ticon.png" alt="Gul" class="rune-img">
+                <span class="resaltado-rune">Gul</span> •
+                <img src="runas/runeShael_ticon.png" alt="Shael" class="rune-img">
+                <span class="resaltado-rune">Shael</span> •
+                <img src="runas/runeBer_ticon.png" alt="Ber" class="rune-img">
+                <span class="resaltado-rune">Ber</span>
+            </div>
+            <div class="requirements">Req level: 03</div>
+            <div class="requirements">El yelmo alfa (solo Druida)</div>
+            <div class="effects">
+                <ul>
+                    <li>Nivel 15 del aura Vigor cuando estás equipado</li>
+                    <li>+4 a todas las habilidades</li>
+                    <li><span class="resaltado">+35%</span> Velocidad de ataque aumentada</li>
+                    <li><span class="resaltado">+20%</span> Recuperación de impacto más rápida</li>
+                    <li><span class="resaltado">+500</span> de puntuación de ataque</li>
+                    <li><span class="resaltado">+53%</span> para Daño de habilidad de <span style="color:green;">veneno</span></li>
+                    <li><span class="resaltado">-56%</span> para Resistencia al <span style="color:green;">veneno</span> enemigo</li>
+                    <li>+3 para Rabia (solo druida)</li>
+                    <li>+3 para Savia de roble (solo druida)</li>
+                    <li><span class="resaltado">+5%</span> a la resistencia máxima al veneno</li>
+                    <li>Daño reducido en <span class="resaltado">8%</span></li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Tempestad - Yelmo Alfa" onclick="abrirModal('equipo/Tempestad.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Terror (3)</div>
+            <div class="runes">
+                <img src="runas/runeBer_ticon.png" alt="Ber" class="rune-img">
+                <span class="resaltado-rune">Ber</span> •
+                <img src="runas/runeCham_ticon.png" alt="Cham" class="rune-img">
+                <span class="resaltado-rune">Cham</span> •
+                <img src="runas/runeBer_ticon.png" alt="Ber" class="rune-img">
+                <span class="resaltado-rune">Ber</span>
+            </div>
+            <div class="requirements">Req level: 67</div>
+            <div class="requirements">Corona guardiana (solo Bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li>+4 a todas las habilidades (3-4)</li>
+                    <li><span class="resaltado">+155%</span> Defensa perfeccionada (100-200)</li>
+                    <li><span class="resaltado">+16</span> a todos los atributos (10-25)</li>
+                    <li>Repostar vida <span class="resaltado">+20</span></li>
+                    <li>Regenerar maná <span class="resaltado">84%</span> (75-100)</li>
+                    <li>Daño reducido en <span class="resaltado">16%</span></li>
+                    <li>No puede congelarse</li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Terror - Corona Guardiana" onclick="abrirModal('equipo/Terror.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Venganza de Fuego</div>
+            <div class="runes">
+                <img src="runas/runeUm_ticon.png" alt="Um" class="rune-img">
+                <span class="resaltado-rune">Um</span> •
+                <img src="runas/runeOhm_ticon.png" alt="Ohm" class="rune-img">
+                <span class="resaltado-rune">Ohm</span> •
+                <img src="runas/runeJah_ticon.png" alt="Jah" class="rune-img">
+                <span class="resaltado-rune">Jah</span>
+            </div>
+            <div class="requirements">Req level: 65</div>
+            <div class="requirements">El yelmo alfa (solo Druida)</div>
+            <div class="effects">
+                <ul>
+                    <li>+3 a todas las habilidades</li>
+                    <li><span class="resaltado">+20%</span> Velocidad de lanzamiento mayor</li>
+                    <li><span class="resaltado">+10%</span> para Daño de habilidad de fuego</li>
+                    <li><span class="resaltado">-14%</span> para Resistencia al fuego enemigo</li>
+                    <li>+3 para Volcán (solo druida)</li>
+                    <li>+3 para Savia de roble (solo druida)</li>
+                    <li>Aumenta la vida máxima <span class="resaltado">5%</span></li>
+                    <li><span class="resaltado">+5%</span> a la resistencia mínima al fuego</li>
+                    <li>Todas las Resistencias <span class="resaltado">30</span></li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Venganza de Fuego - Yelmo Alfa" onclick="abrirModal('equipo/venganza1.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Venganza</div>
+            <div class="runes">
+                <img src="runas/runeJah_ticon.png" alt="Jah" class="rune-img">
+                <span class="resaltado-rune">Jah</span> •
+                <img src="runas/runeUm_ticon.png" alt="Um" class="rune-img">
+                <span class="resaltado-rune">Um</span> •
+                <img src="runas/runeOhm_ticon.png" alt="Ohm" class="rune-img">
+                <span class="resaltado-rune">Ohm</span>
+            </div>
+            <div class="requirements">Req level: 65</div>
+            <div class="requirements">El yelmo alfa (solo Druida)</div>
+            <div class="effects">
+                <ul>
+                    <li>+3 a todas las habilidades</li>
+                    <li><span class="resaltado">+20%</span> Velocidad de lanzamiento mayor</li>
+                    <li><span class="resaltado">+11%</span> para Daño de habilidad de frío</li>
+                    <li><span class="resaltado">-13%</span> para Resistencia al frío enemigo</li>
+                    <li>+3 para Tornado (solo druida)</li>
+                    <li>+3 para Savia de roble (solo druida)</li>
+                    <li>Aumenta la vida máxima <span class="resaltado">5%</span></li>
+                    <li><span class="resaltado">+5%</span> a la resistencia mínima al fuego</li>
+                    <li>Todas las Resistencias <span class="resaltado">30</span></li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Venganza - Yelmo Alfa" onclick="abrirModal('equipo/Venganza.png')">
+        </div>
+        <div class="runeword-box">
+            <div class="title">Voz</div>
+            <div class="runes">
+                <img src="runas/runeSur_ticon.png" alt="Sur" class="rune-img">
+                <span class="resaltado-rune">Sur</span> •
+                <img src="runas/runeOhm_ticon.png" alt="Ohm" class="rune-img">
+                <span class="resaltado-rune">Ohm</span> •
+                <img src="runas/runeGul_ticon.png" alt="Gul" class="rune-img">
+                <span class="resaltado-rune">Gul</span>
+            </div>
+            <div class="requirements">Req level: 61</div>
+            <div class="requirements">El yelmo astado (solo Bárbaro)</div>
+            <div class="effects">
+                <ul>
+                    <li>Nivel 10 del aura Fuerza cuando estás equipado</li>
+                    <li>+3 a todas las habilidades</li>
+                    <li><span class="resaltado">+39%</span> Correr/Andar más rápido</li>
+                    <li><span class="resaltado">+25%</span> Velocidad de ataque aumentada</li>
+                    <li><span class="resaltado">+30%</span> Recuperación de impacto más rápida</li>
+                    <li>+3 para Órdenes de batalla (solo bárbaro)</li>
+                    <li>+3 para Grito (solo bárbaro)</li>
+                    <li><span class="resaltado">+11%</span> Defensa perfeccionada</li>
+                    <li>Aumenta el maná máximo <span class="resaltado">5%</span></li>
+                    <li><span class="resaltado">+5%</span> a la resistencia máxima al veneno</li>
+                    <li><span class="resaltado">+5%</span> a la resistencia mínima al fuego</li>
+                    <li>Daño reducido en <span class="resaltado">20%</span></li>
+                    <li>Aumenta la durabilidad máxima <span class="resaltado">10%</span></li>
+                    <li>Engarzado (<span class="resaltado">3</span>)</li>
+                </ul>
+            </div>
+            <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Voz - Yelmo Astado" onclick="abrirModal('equipo/Voz.png')">
+        </div>
+    </div>
+    </section>
+    <div class="boton-container">
+        <img src="imagenes/separador.png" alt="Ir al inicio" onclick="irAlInicio()">
+    </div>
+
+    <!-- Sección de Guantes, Botas y Cinturones -->
+    <section class="section-container">
+        <section id="botas">
+            <h2 class="titulo-equipo">botas, guantes y Cinturones</h2>
+        </section>
+            <div class="runewords-grid">
+                <div class="runeword-box">
+                    <div class="title">Agarre del Destino (4)</div>
+                    <div class="runes">
+                        <img src="runas/runeThul_ticon.png" alt="Thul" class="rune-img">
+                        <span class="resaltado-rune">Thul</span> •
+                        <img src="runas/runeRal_ticon.png" alt="Ral" class="rune-img">
+                        <span class="resaltado-rune">Ral</span> •
+                        <img src="runas/runeOrt_ticon.png" alt="Ort" class="rune-img">
+                        <span class="resaltado-rune">Ort</span> •
+                        <img src="runas/runeTal_ticon.png" alt="Tal" class="rune-img">
+                        <span class="resaltado-rune">Tal</span>
+                    </div>
+                    <div class="requirements">Req level: 64</div>
+                    <div class="requirements">El guantelete de ogro</div>
+                    <div class="effects">
+                        <ul>
+                            <li>+1 a los niveles de habilidad de la hechicera</li>
+                            <li><span class="resaltado">+10%</span> Velocidad de ataque aumentada</li>
+                            <li><span class="resaltado">+12%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+30</span> de vida</li>
+                            <li>Repostar vida <span class="resaltado">+14</span></li>
+                            <li><span class="resaltado">+22</span> de maná</li>
+                            <li>Regenerar maná <span class="resaltado">14%</span></li>
+                            <li>Todas las Resistencias <span class="resaltado">30</span></li>
+                            <li>Aumenta la durabilidad máxima <span class="resaltado">14%</span></li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Agarre del Destino - Guantelete de Ogro" onclick="abrirModal('equipo/agarre.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Autoridad (4)</div>
+                    <div class="runes">
+                        <img src="runas/runeLo_ticon.png" alt="Lo" class="rune-img">
+                        <span class="resaltado-rune">Lo</span> •
+                        <img src="runas/runeJah_ticon.png" alt="Jah" class="rune-img">
+                        <span class="resaltado-rune">Jah</span> •
+                        <img src="runas/runeShael_ticon.png" alt="Shael" class="rune-img">
+                        <span class="resaltado-rune">Shael</span> •
+                        <img src="runas/runeIth_ticon.png" alt="Ith" class="rune-img">
+                        <span class="resaltado-rune">Ith</span>
+                    </div>
+                    <div class="requirements">Req level: 75</div>
+                    <div class="requirements">El guantelete de ogro</div>
+                    <div class="effects">
+                        <ul>
+                            <li><span class="resaltado">5%</span> de posibilidades de lanzar el nivel 15 Corazón lobezno al azotar</li>
+                            <li>+1 a todas las habilidades (1-3)</li>
+                            <li><span class="resaltado">+61%</span> Recuperación de impacto más rápida (40-60)</li>
+                            <li><span class="resaltado">+202%</span> Daño mejorado (200-300)</li>
+                            <li><span class="resaltado">401%</span> de bonificación en el ataque (400-600)</li>
+                            <li><span class="resaltado">+408</span> de puntuación de ataque (400-600)</li>
+                            <li><span class="resaltado">15%</span> Maná robado por impacto</li>
+                            <li><span class="resaltado">15%</span> Vida robada por impacto</li>
+                            <li><span class="resaltado">+50</span> a todos los atributos</li>
+                            <li><span class="resaltado">+150</span> de vida</li>
+                            <li>Aumenta la durabilidad máxima <span class="resaltado">14%</span></li>
+                            <li>Repara 1 de durabilidad en 20 segundos.</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Autoridad - Guantelete de Ogro" onclick="abrirModal('equipo/Autoridad.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Noche</div>
+                    <div class="runes">
+                        <img src="runas/runeCham_ticon.png" alt="Cham" class="rune-img">
+                        <span class="resaltado-rune">Cham</span> •
+                        <img src="runas/runeOhm_ticon.png" alt="Ohm" class="rune-img">
+                        <span class="resaltado-rune">Ohm</span>
+                    </div>
+                    <div class="requirements">Req level: 77</div>
+                    <div class="requirements">Cinturón pesado</div>
+                    <div class="effects">
+                        <ul>
+                            <li>+1 a todas las habilidades</li>
+                            <li><span class="resaltado">+31%</span> Velocidad de ataque aumentada</li>
+                            <li><span class="resaltado">+289%</span> Daño mejorado</li>
+                            <li><span class="resaltado">50%</span> Posibilidad de golpe triturador</li>
+                            <li><span class="resaltado">50%</span> azote mortal</li>
+                            <li><span class="resaltado">27%</span> Posibilidad de heridas abiertas</li>
+                            <li>Evita la curación del monstruo</li>
+                            <li>Daño reducido en <span class="resaltado">17%</span></li>
+                            <li>Repara 1 de durabilidad en 20 segundos.</li>
+                            <li>Engarzado (<span class="resaltado">2</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Noche - Cinturón Pesado" onclick="abrirModal('equipo/noche')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Obsesión</div>
+                    <div class="runes">
+                        <img src="runas/runeAmn_ticon.png" alt="Amn" class="rune-img">
+                        <span class="resaltado-rune">Amn</span> •
+                        <img src="runas/runeSol_ticon.png" alt="Sol" class="rune-img">
+                        <span class="resaltado-rune">Sol</span> •
+                        <img src="runas/runeHel_ticon.png" alt="Hel" class="rune-img">
+                        <span class="resaltado-rune">Hel</span> •
+                        <img src="runas/runeIth_ticon.png" alt="Ith" class="rune-img">
+                        <span class="resaltado-rune">Ith</span>
+                    </div>
+                    <div class="requirements">Req level: 73</div>
+                    <div class="requirements">Botas pesadas</div>
+                    <div class="effects">
+                        <ul>
+                            <li>+1 a todas las habilidades</li>
+                            <li><span class="resaltado">+77%</span> Correr/Andar más rápido</li>
+                            <li><span class="resaltado">+284%</span> Daño mejorado</li>
+                            <li>Ignorar defensa del objetivo</li>
+                            <li>Congela al objetivo <span class="resaltado">+3</span></li>
+                            <li><span class="resaltado">+8%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+50</span> a todos los atributos</li>
+                            <li><span class="resaltado">+150</span> de vida</li>
+                            <li>Todas las Resistencias <span class="resaltado">45</span></li>
+                            <li>Daño reducido en <span class="resaltado">16%</span></li>
+                            <li>Repara 1 de durabilidad en 20 segundos.</li>
+                            <li>Requisitos <span class="resaltado">-15%</span></li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Osesión - Botas Pesadas" onclick="abrirModal('equipo/obsesion.png')">
+                </div>
+                <div class="runeword-box">
+                    <div class="title">Principiante</div>
+                    <div class="runes">
+                        <img src="runas/runeNef_ticon.png" alt="Nef" class="rune-img">
+                        <span class="resaltado-rune">Nef</span> •
+                        <img src="runas/runeEl_ticon.png" alt="El" class="rune-img">
+                        <span class="resaltado-rune">El</span> •
+                        <img src="runas/runeIth_ticon.png" alt="Ith" class="rune-img">
+                        <span class="resaltado-rune">Ith</span> •
+                        <img src="runas/runeTir_ticon.png" alt="Tir" class="rune-img">
+                        <span class="resaltado-rune">Tir</span> •
+                        <img src="runas/runeEld_ticon.png" alt="Eld" class="rune-img">
+                        <span class="resaltado-rune">Eld</span>
+                    </div>
+                    <div class="requirements">Req level: 13</div>
+                    <div class="requirements">Botas pesadas</div>
+                    <div class="effects">
+                        <ul>
+                            <li>+1 a los niveles de habilidad del paladín</li>
+                            <li><span class="resaltado">+22%</span> Correr/Andar más rápido</li>
+                            <li><span class="resaltado">+10%</span> Velocidad de ataque aumentada</li>
+                            <li><span class="resaltado">+10%</span> Velocidad de lanzamiento mayor</li>
+                            <li><span class="resaltado">+12%</span> Recuperación de impacto más rápida</li>
+                            <li><span class="resaltado">+8%</span> Defensa perfeccionada</li>
+                            <li><span class="resaltado">+15</span> Defensa</li>
+                            <li><span class="resaltado">+30</span> Defensa contra Misil</li>
+                            <li><span class="resaltado">+21</span> de maná</li>
+                            <li>Regenerar maná <span class="resaltado">11%</span></li>
+                            <li><span class="resaltado">15%</span> Drenaje de resistencia más lento</li>
+                            <li>+2 al maná tras cada muerte</li>
+                            <li><span class="resaltado">+1</span> al Radio de luz</li>
+                            <li>Engarzado (<span class="resaltado">4</span>)</li>
+                        </ul>
+                    </div>
+                    <img src="armaduras/nipRecurso 2.png" class="escudo-img" alt="Principiante - Botas Pesadas" onclick="abrirModal('equipo/principiante.png')">
+                </div>   
+            </div>
+        </div>
+        <div id="miModal" class="modal">
+            <div class="modal-contenedor">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <img class="modal-contenido" id="imagenModal">
+            </div>
+        </div>
+    </section>
+    <div class="boton-container">
+        <img src="imagenes/separador.png" alt="Ir al inicio" onclick="irAlInicio()">
+    </div>
+
+    <script>
+        function abrirModal(rutaImagen) {
+            var modal = document.getElementById("miModal");
+            var modalImg = document.getElementById("imagenModal");
+            modal.style.display = "block";
+            modalImg.src = rutaImagen;
+        }
+
+        function cerrarModal() {
+            var modal = document.getElementById("miModal");
+            modal.style.display = "none";
+        }
+
+        // Cerrar el modal si se hace clic fuera de la imagen
+        window.onclick = function(event) {
+            var modal = document.getElementById("miModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Función para el buscador
+        function buscarEscudos() {
+            let input = document.getElementById("buscador").value.toLowerCase();
+            let escudos = document.getElementsByClassName("runeword-box");
+
+            for (let i = 0; i < escudos.length; i++) {
+                let titulo = escudos[i].getElementsByClassName("title")[0].innerText.toLowerCase();
+                if (titulo.includes(input)) {
+                    escudos[i].classList.remove("oculto"); // Muestra coincidencias
+                } else {
+                    escudos[i].classList.add("oculto"); // Oculta los que no coinciden
+                }
+            }
+        }
+
+        // Agregar el evento input al buscador
+        document.getElementById("buscador").addEventListener("input", buscarEscudos);
+    </script>
+<script>
+    function irAlInicio() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

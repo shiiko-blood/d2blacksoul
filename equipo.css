@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Exocet2';
+    src: url('fonts/Exocet2.ttf') format('woff2'),
+         url('fonts/Exocet2.ttf') format('woff');
+}
+
+body {
+    font-family: 'Exocet2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.menu-container {
+    background-image: url(imagenes/FONDOMENU.png);
+    max-width: 100%;
+    margin: 0 auto;
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-size: cover; /* Ajusta la imagen sin recortar */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 6vw; /* Ajusta la altura según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido al lado derecho */
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Lo pega completamente arriba */
+    left: 0; /* Lo alinea a la izquierda */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.header {
+    background-image: url(imagenes/imagen4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4vw;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.menu {
+    background: #ffffff00;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-shadow: 0 0 15px white;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Justifica el contenido del menú al lado derecho */
+    gap: 10px;
+    width: auto;
+}
+
+.menu-items li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.menu-items a {
+    color: rgb(251, 255, 0);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: justify; /* Justifica el texto */
+}
+
+.menu-items a:hover {
+    background-color: #34495e49;
+    color: #3498db;
+    transform: translateY(-2px);
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%; /* El submenú se abrirá a la izquierda */
+    background: #33333300;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-items li {
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.submenu-items li:last-child {
+    border-bottom: none;
+}
+
+.submenu-items a {
+    padding: 12px 20px;
+    width: 100%;
+    display: block;
+}
+
+.menu-items a.active {
+    background-color: #3498db;
+    color: rgba(255, 255, 255, 0);
+}
+
+.logo {
+    background-image: url('imagenes/imagRecurso\ 1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    padding: 50px 55px;
+    position: fixed;
+    top: 0%;
+    left: 5px;
+    height: 45px;
+    z-index: 1001;
+    top: 0;
+}
+
+.titulo-equipo {
+    background-image: url('imagenes/FONDOMENU.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    color: #f5dd8f; /* Color del texto */
+    text-shadow: #ffffff 0px 0px 11px; /* Sombra del texto */
+    font-size: 70px; /* Tamaño del texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #f5dd8f;
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 11px;
+}
+
+h3 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #f5dd8f;
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 11px;
+}
+
+h4 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #f5dd8f;
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 11px;
+}
+
+.search-label {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+
+/* Estilos para ocultar elementos durante la búsqueda */
+.oculto {
+    display: none !important;
+}
+
+/* GRID CONTAINERS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-auto-flow: dense; /* Reorganiza los elementos para evitar espacios vacíos */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+/* CUADROS INDIVIDUALES */
+.runeword-box {
+    background-color: #222;
+    color: #eaff00;
+    border: 2px solid #009dff5a;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 150px; /* Evita cuadros demasiado pequeños */
+    height: auto; /* Ajusta la altura según el contenido */
+}
+
+/* IMÁGENES DE RUNAS */
+.rune-img {
+    vertical-align: middle;
+    height: 1em;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* ESTILO PARA NOMBRES DE RUNAS */
+.resaltado-rune {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5dd8f;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.runes {
+    font-size: 18px;
+    color: #fffb00;
+    margin: 10px 0;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.requirements {
+    font-style: italic;
+    color: #ffffff;
+}
+
+.effects {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.effects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.effects li {
+    color: #00ffff;
+    margin-bottom: 5px;
+}
+
+/* IMAGEN DE ESCUDO */
+.escudo-img {
+    width: 160px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: auto; /* Empuja la imagen hacia la parte inferior sin superponer el texto */
+}
+
+.escudo-img:hover {
+    transform: scale(2);
+    z-index: 1000;
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor interno */
+.modal-contenedor {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 60%;
+    max-height: 60%;
+    padding: 20px;
+}
+
+/* Imagen dentro del modal */
+.modal-contenido {
+    margin: 0;
+    display: block;
+    max-width: 90%; /* Ajustar el tamaño máximo de la imagen */
+    max-height: 80vh; /* Cambia el valor a lo que se necesite para mayor tamaño */
+    width: auto; /* Ajusta automáticamente el ancho de la imagen */
+    height: auto; /* Ajusta automáticamente la altura de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.section-contenedora h2 {
+    color: rgb(0, 221, 255);
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.349);
+}
+
+/* Botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* RESALTADO */
+.resaltado {
+    text-shadow: 0px 0px 11px rgb(98, 250, 250);
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+    }
+}
+
+
+
+/*buscador*/
+.buscador-container {
+    display: flex;
+    justify-content: flex; /* Alinea el buscador a la derecha */
+    margin-bottom: 20px;
+}
+
+#buscador {
+    width: 200px; /* Reduce el tamaño del input */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* Ajuste del grid para 3 columnas fijas */
+.runewords-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 10px;
+    width: 100%;
+}
+
+/* Ajustes para los runeword-box */
+.runeword-box {
+    width: 100%;
+    min-width: 0; /* Permite que las cajas se ajusten al grid */
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+
+/* Quitar fondo del menú principal */
+nav {
+    background-color: transparent !important; /* Forzar transparencia */
+}
+
+nav ul {
+    background-color: transparent;
+}
+
+nav ul li {
+    background-color: transparent;
+}
+
+/* Asegurar que no haya líneas en la parte superior */
+section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Ocultar el menú hamburguesa y sus líneas */
+.navbar-toggler {
+    display: none !important; /* Ocultar completamente el botón del menú */
+}
+
+/* Si hay un ícono específico de hamburguesa */
+.navbar-toggler-icon {
+    display: none !important;
+}
+
+/* Asegurarse de que no haya bordes en el nav */
+nav {
+    border: none !important;
+}
+
+.navbar {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background-color: rgb(223, 214, 214);
+    padding: 0px;
+    text-align: justify;
+    z-index: 1000;
+}
+.navbar a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(128, 128, 128, 0);
+}
+
+/* Espaciado para que las secciones no queden debajo del menú */
+section {
+    padding: 100px 20px;
+    min-height: 20vh;
+    margin-top: 50px;
+}
+
+.boton-container {
+    display: flex; /* Flexbox para alinear */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente (si es necesario) */
+    padding: 20px 0;
+    }
+    
+    img {
+    cursor: pointer;
+    width: 200px; /* Tamaño de la imagen */
+    height: auto;
+    }

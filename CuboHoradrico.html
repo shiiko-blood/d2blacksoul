@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>blacksoul - cubo_horadrico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="cubohoradrico.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <div class="menu-container">
+            <nav class="menu">
+                <ul class="menu-items">
+                    
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descargas.html">descargas</a></li>
+                    <li><a href="palabras-runicas.html">palabras runicas</a></li>
+                    <li><a href="item.html">item unicos</a></li>
+                    <li><a href="guias.html">guias</a></li>
+                    <li><a href="CuboHoradrico.html">Cubo Horadric</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="btn-gif" id="gif">
+            <button class="btn-gif" id="openSlider">
+                <img src="imagenes/para ambar3.gif" alt="">
+            </button>
+        </div>
+    </main>
+    <div class="slider-overlay" id="sliderOverlay">
+        <div class="container swiper">
+            <div class="slider-wrapper swiper-wrapper">
+                <div class="swiper-slide" data-content="content1">
+                    <div class="card-item">
+                        <img src="imagenes/portal.gif" alt="user-image" class="user-image">
+                        <h2 class="user-name">entradas</h2>
+                        <p class="user-profession">nuevos jefes esperandote</p>
+                        <button class="message-button">Ver más</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-content="content2">
+                    <div class="card-item">
+                        <img src="imagenes/w3.gif" alt="user-image" class="user-image">
+                        <h2 class="user-name">skin</h2>
+                        <p class="user-profession">nuevos complementos para tu personaje</p>
+                        <button class="message-button">Ver más</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-content="content3">
+                    <div class="card-item">
+                        <img src="imagenes/gemas.gif" alt="user-image" class="user-image">
+                        <h2 class="user-name">formulas</h2>
+                        <p class="user-profession">convinaciones del cubo</p>
+                        <button class="message-button">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <button class="close-slider" id="closeSlider">X</button>
+    </div>
+
+    <!-- CONTENIDO OCULTO -->
+    <div class="content" id="content1">
+        <h2>Información de Amazona</h2>
+        <p>La amazona es una guerrera ágil y letal...</p>
+    </div>
+
+    <div class="content" id="content2">
+        <h2>Información de Guerrera</h2>
+        <p>Una luchadora con habilidades de combate excepcionales...</p>
+    </div>
+
+    <div class="content" id="content3">
+        <h2>Información de Maga</h2>
+        <p>Domina las artes mágicas y puede lanzar poderosos hechizos...</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
