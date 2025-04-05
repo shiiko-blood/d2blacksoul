@@ -1,0 +1,602 @@
+@font-face {
+    font-family: 'Exocet2';
+    src: url('fonts/Exocet2.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+    overflow-y: auto; /* Asegura que solo haya una barra de desplazamiento vertical */
+    margin: 0;
+    padding:0;
+    background-image: url(img/img1.png); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+body {
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0; /* Elimina paddings adicionales */
+
+}
+
+h1 {
+    font-size: 0.8em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: 0 0 5px white;
+    color: white;
+}
+
+/* Estilo por defecto: menú en fila */
+.menu-container {
+    
+    background-size: 1400px 100px; /* Tamaño fijo de la imagen en píxeles */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    height: 100px; /* Altura fija del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    display: flex; /* Activa el modelo de flexbox */
+    justify-content: flex-end; /* Alinea los elementos al lado derecho */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espaciado entre los elementos del menú */
+    flex-wrap: nowrap; /* Evita que los elementos se apilen por defecto */
+    position: fixed; /* Fija el contenedor en la parte superior */
+    top: 0; /* Lo posiciona en la parte superior de la ventana */
+    left: 0; /* Lo alinea al borde izquierdo */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    overflow: hidden;
+}
+
+.menu-items {
+    display: flex; /* Organiza los elementos del menú en una fila */
+    flex-direction: row; /* Por defecto, los elementos están en fila */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.menu-items li {
+    position: relative; /* Necesario para posicionar el texto encima del fondo */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.menu-items a {
+    display: block; /* Convierte el enlace en un bloque para que pueda tener un fondo */
+    width: 120px; /* Ajusta el ancho del enlace con una unidad fija */
+    height: 60px; /* Ajusta la altura del enlace con una unidad fija */
+    line-height: 60px; /* Centra el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-image: url('img/img2.png'); /* Ruta de la imagen de fondo */
+    background-size: 130px; /* Ajusta la imagen para cubrir todo el enlace */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Cambia el color del texto para que sea visible */
+    font-size: 1rem; /* Usa una unidad relativa para el tamaño del texto */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black; /* Agrega un sombreado para mejor visibilidad */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin-left: 10px; /* Espaciado entre los elementos del menú */
+}
+
+.logo {
+    background-image: url(img/imglogo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30vh; /* Ajusta el tamaño del logo */
+    height: 30vh; /* Altura del logo */
+    width: 30vh; /* Ancho del logo */
+}
+
+.header {
+    background-image: url(img/imgmenu.png);
+    display: flex; /* Activa Flexbox para organizar los elementos en fila */
+    align-items: center; /* Centra verticalmente el logo y el menú */
+    justify-content: space-between; /* Coloca el logo a la izquierda y el menú a la derecha */
+    position: fixed; /* Fija el contenedor en la parte superior */
+    top: 0; /* Lo posiciona en la parte superior */
+    left: 0; /* Lo alinea al borde izquierdo */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    height: 100px; /* Ajusta la altura del contenedor */
+    background-color: rgba(0, 0, 0, 0); /* Fondo oscuro */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 0 20px; /* Añade espacio interno a los lados */
+}
+
+.contenedor-principal {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 20px; /* Añade un padding interno para evitar que el contenido toque los bordes */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.contenedor-boxes {
+    display: flex;
+    flex-direction: row; /* Cambia a fila para alinear horizontalmente */
+    align-items: flex-start;
+    justify-content: space-between; /* Distribuye los boxes de manera uniforme */
+    width: 100%; /* Cambia de 100vw a 100% */
+    z-index: 1; /* Asegura que los boxes estén por encima de otros elementos */
+    margin-top: 60px; /* Añade espacio para que los boxes queden debajo del menú */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.box-contenedor1, .box-contenedor2 {
+    flex: 1;
+    margin: 0 10px; /* Cambia esto si es necesario */
+}
+
+.titulo-box1, .titulo-box2 {
+    font-family: 'Exocet2', sans-serif;
+    background-color: rgba(34, 34, 34, 0.596);
+    color: rgb(234, 255, 0);
+    padding: 15px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 15px white;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+
+.box-informacion1, .box-informacion2 {
+    font-family: 'Exocet2', sans-serif;
+    background-color: rgba(34, 34, 34, 0.7); /* Fondo oscuro */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    padding: 40px; /* Reduce el relleno interno */
+    text-align: center; /* Centra el texto */
+    width: 80%; /* Reduce el ancho del box */
+    margin: auto; /* Centra el box horizontalmente y añade espacio vertical */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5); /* Sombra */
+    font-size: 12px; /* Reduce el tamaño del texto */
+}
+
+.calificacion {
+    font-size: 18px;
+    color: rgb(0, 255, 179);
+}
+
+.estrella {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.llena {
+    color: rgb(0, 255, 85);
+}
+
+.vacia {
+    color: rgb(0, 255, 85);
+}
+
+.detalles {
+    width: auto; /* Asegura que el cuadro ocupe todo el ancho disponible */
+    max-width: 90%; /* Limita el ancho máximo al 90% del contenedor */
+    padding: 15px; /* Ajusta el relleno interno */
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    margin-left: 0; /* Centra el cuadro y añade espacio vertical */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    overflow-wrap: break-word; /* Permite que el texto largo se ajuste a la línea */
+    text-align: justify; /* Justifica el texto para mejor legibilidad */
+}
+
+.detalles li {
+    margin: 10px 0;
+}
+
+.detalles li strong {
+    color: rgba(0, 255, 140, 0.614);
+}
+
+.detalles li span {
+    font-weight: bold;
+}
+.detalles2{
+    font-family: 'Exocet2', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 213, 0);
+    opacity: 0;
+    text-align: center;
+}
+
+/* Contenedor para los box */
+.box-rules {
+    display: flex;
+    flex-direction: row; /* Cambia a fila para alinear horizontalmente */
+    align-items: flex-start;
+    justify-content: space-between; /* Distribuye los boxes de manera uniforme */
+    width: 100%; /* Cambia de 100vw a 100% */
+    z-index: 1; /* Asegura que los boxes estén por encima de la imagen */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.box-rules1 {
+    flex: 1; /* Permite que los boxes ocupen el mismo espacio */
+    margin: 20px; /* Añade espacio alrededor de cada box */
+}
+
+.titulo-rules {
+    font-family: 'arial', sans-serif;
+    background-color: rgba(34, 34, 34, 0.596);
+    color: rgb(47, 255, 0);
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.rules-informacion2 {
+    font-family: 'Exocet2', sans-serif;
+    background-color: rgba(34, 34, 34, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
+    width: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.rules-informacion2 h3 {
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+}
+
+.calificacion {
+    font-size: 18px;
+    color: rgb(0, 255, 179);
+}
+
+.estrella {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.llena {
+    color: rgb(0, 255, 85);
+}
+
+.vacia {
+    color: rgb(0, 255, 85);
+}
+
+.detalles-rules {
+    font-family: 'Times New Roman', 'Courier New';
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.detalles-rules li {
+    margin: 10px 0;
+}
+
+.detalles-rules li strong {
+    color: rgba(0, 255, 140, 0.614);
+}
+
+.detalles-rules li span {
+    font-weight: bold;
+}
+
+.detalles-rules p {
+    font-size: 20px;
+    color: rgb(255, 213, 0);
+    margin-top: 20px;
+    text-shadow: 0 0 5¿9px yellow;
+    opacity: 100;
+}
+
+.discord-info {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(54, 57, 63, 0.9); /* Fondo similar al tema de Discord */
+    color: white;
+    padding: 20px ;
+    text-align: center;
+    width: 50%;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Asegúrate de que no excedan el ancho del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.discord-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.discord-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 100;
+}
+
+.discord-button {
+    display: inline-block;
+    background-color: #5865F2; /* Color oficial de Discord */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #4752C4; /* Color más oscuro al pasar el mouse */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor-boxes, .box-rules, .menu-container {
+    overflow: hidden;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    margin-right: 10px;
+    padding: 17px 30px;
+    border: 2px solid #b4b4b4;
+    outline: none;
+    color: #1b293a;
+}
+
+.campo::placeholder {
+    color: #000000;
+}
+
+.footer-txt {
+    margin-top: 50px;
+    border-top: 2px solid #b4b4b47e;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #fffdfc;
+    color: #0d00ff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-container {
+        display: none; /* Oculta el menú inicialmente */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Asegúrate de que no sea 100vw */
+        height: 100%;
+        z-index: 1000;
+        padding: 20px;
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    }
+
+    .menu-container.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón del menú */
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    .menu-toggle img {
+        width: 100px; /* Ajusta el tamaño del GIF o imagen */
+        height: 80px;
+    }
+
+    .menu-container {
+        flex-direction: column; /* Cambia el contenedor a columna */
+        align-items: center; /* Centra los elementos en la columna */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin-top: 0; /* Elimina el margen superior */
+        background-position: center top; /* Centra la imagen en la parte superior */
+        background-size: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor */
+        margin: 0;
+        width: 100%; /* Asegúrate de que no sea 100vw */
+    }
+
+    .menu-items {
+        flex-direction: column; /* Cambia los elementos del menú a columna */
+        gap: 10px; /* Mantén un espacio uniforme entre los elementos */
+    }
+
+    .contenedor-boxes {
+        display: flex;
+        flex-direction: column; /* Cambia los boxes a columna */
+        align-items: center; /* Centra los boxes horizontalmente */
+        width: 100%; /* Cambia de 100vw a 100% */
+        margin: 0 auto; /* Centra el contenido */
+        margin-top: 20px; /* Añade espacio debajo del menú */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .box-contenedor1, .box-contenedor2 {
+        width: 90%; /* Ajusta el ancho de las columnas para pantallas pequeñas */
+        margin: 0 auto; /* Centra el contenido */
+        margin-bottom: 20px; /* Añade espacio entre las columnas */
+    }
+
+    .titulo-box1, .titulo-box2 {
+        font-size: 18px; /* Ajusta el tamaño del texto en las columnas */
+        padding: 10px; /* Ajusta el espacio interno de las columnas */
+    }
+
+    .box-informacion1, .box-informacion2 {
+        width: auto; /* Aumenta el ancho para pantallas pequeñas */
+        padding: 10px; /* Reduce el relleno interno */
+        font-size: 10px; /* Reduce el tamaño del texto */
+    }
+
+    .discord-info {
+        width: 90%;
+        margin: 60x auto;
+        padding: 10px;
+    }
+
+    .contenedor-rules {
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        margin: 20px auto; /* Centra el contenedor y añade espacio */
+        padding: 10px; /* Añade espacio interno */
+    }
+
+    .box-rules {
+        flex-direction: column; /* Cambia los boxes a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        width: 100%; /* Asegura que el box ocupe todo el ancho */
+    }
+
+    .box-rules1 {
+        width: 90%; /* Ajusta el ancho del box para pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio debajo del box */
+        padding: 10px; /* Ajusta el espacio interno */
+    }
+
+    .titulo-rules {
+        font-size: 18px; /* Ajusta el tamaño del texto del título */
+        padding: 10px; /* Ajusta el espacio interno del título */
+        text-align: center; /* Centra el texto */
+    }
+
+    .rules-informacion2 {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        padding: 10px; /* Ajusta el espacio interno */
+    }
+
+    .detalles {
+        width: 100%; /* Asegura que el cuadro ocupe todo el ancho disponible */
+        max-width: 90%; /* Limita el ancho máximo al 90% del contenedor */
+        padding: 10px; /* Reduce el relleno interno en pantallas pequeñas */
+        font-size: 12px; /* Reduce el tamaño del texto */
+        margin: 0 auto; /* Ajusta el margen vertical */
+    }
+
+    .detalles li {
+        margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+        text-align: justify; /* Justifica el texto para mejor legibilidad */
+    }
+
+    .footer-content {
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Cambia la disposición a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        padding: 10px; /* Ajusta el espacio interno */
+    }
+
+    .campo {
+        width: 90%; /* Asegura que los campos ocupen el 90% del ancho */
+        margin-bottom: 10px; /* Añade espacio entre los campos */
+        padding: 10px; /* Ajusta el espacio interno */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+
+    .btn-2 {
+        width: 90%; /* Asegura que el botón ocupe el mismo ancho que los campos */
+        padding: 10px; /* Ajusta el espacio interno */
+        font-size: 14px; /* Reduce el tamaño del texto */
+        margin: 0; /* Elimina márgenes adicionales */
+        text-align: center; /* Centra el texto dentro del botón */
+    }
+
+    footer {
+        display: flex; /* Activa Flexbox para organizar los elementos */
+        flex-direction: column; /* Cambia la disposición a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+        text-align: center; /* Centra el texto */
+        padding: 20px; /* Ajusta el espacio interno */
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para destacar el footer */
+    }
+
+    .footer-txt {
+        margin-top: 20px; /* Añade espacio superior */
+        font-size: 12px; /* Ajusta el tamaño del texto */
+        text-align: center; /* Centra el texto */
+    }
+}
+
+/* En pantallas grandes, el menú siempre está visible */
+@media (min-width: 769px) {
+    .menu-container {
+        display: flex; /* Muestra el menú siempre */
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta el botón del menú */
+    }
+}

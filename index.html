@@ -2,29 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacksoul</title>
-    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">|
+    <title>Blacksoul Inicio</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo"></a>
+        <div class="menu-toggle">
+            <img src="img/para ambar3.gif" alt="Abrir menú" id="menu-icon" />
+        </div>
         <div class="menu-container">
             <nav class="menu">
+                
                 <ul class="menu-items">
+                    <li>
+                        <a href="index.html">
+                            <h1>inicio</h1></a>                        
+                    </li>
+                    <li>
+                        <a href="descargas.html">
+                            <h1>descargas</h1></a>                        
+                    </li>
+                    <li>
+                        <a href="palabras-runicas.html">
+                            <h1>runewords</h1></a>
+                    </li>
+                    <li>
+                        <a href="item.html">
+                            <h1>items</h1></a>                        
+                    <li>
+                        <a href="guias.html">
+                            <h1>guias</h1></a>                        
+                    </li>
+                    <li>
+                        <a href="CuboHoradrico.html">
+                            <h1>formulas</h1></a>                        
+                    </li>
                     
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="descargas.html">descargas</a></li>
-                    <li><a href="palabras-runicas.html">palabras runicas</a></li>
-                    <li><a href="item.html">item unicos</a></li>
-                    <li><a href="guias.html">guias</a></li>
-                    <li><a href="CuboHoradrico.html">Cubo Horadric</a></li>
-
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="box-contenedor0">
+        <div class="discord-info">
+            <h2>Únete a nuestro Discord</h2>
+            <p>Conéctate con nuestra comunidad en Discord para obtener las últimas noticias, eventos y soporte.</p>
+            <a href="https://discord.com/invite/tu-invitacion" target="_blank" class="discord-button">Unirse a Discord</a>
+        </div>
+    </div>
     <div class="contenedor-principal">
         <div class="contenedor-boxes">
             <div class="box-contenedor1">
@@ -33,8 +60,8 @@
                 </div>
                 <div class="box-informacion1">
                     <div class="parche">
-                        <h2>Parche 6.1.0.2 - 26/02/2025 (SOLO SERVER, NO CLIENTE)</h2>
-                        <div class="calificacion">
+                        <h2>Notas del Parche</h2>
+                        <div class="calificacion">                            
                             <span class="estrella llena">&#9733;</span>
                             <span class="estrella llena">&#9733;</span>
                             <span class="estrella llena">&#9733;</span>
@@ -42,14 +69,16 @@
                             <span class="estrella vacia">&#9733;</span>
                         </div>
                         <ul class="detalles">
-                            <li><strong>Modificación a Runewords de Javalina de Amazona (Thunder - Plague):</strong> Se les agregó un stat oculto para que sean "infinitas".</li>
-                            <li><strong>Recetas de Cubo:</strong> Se agregaron otras fórmulas del cubo anteriores que se habían eliminado en la versión 6.0 (items stackeables).</li>
-                            <li><strong>Poción de Experiencia:</strong> Modificada para ser utilizable hasta lv96. Con 3 pociones se sube de lv1 a lv100.</li>
-                            <li><strong>Sinergias de Furia de Relámpagos:</strong> Se modificaron, subiendo el daño mínimo a la habilidad.</li>
-                            <li><strong>Teletransportación en la Cámara de Tal Rasha:</strong> Ahora se pueden atravesar muros para facilitar el rush.</li>
-                            <li><strong>Nuevo Mapa de Vacas:</strong> Introducción de un "nuevo" mapa con un jefe nuevo que dropea 5 items distintos necesarios para abrir las Ruinas Nephalem.</li>
-                        </ul>
-                        <p><strong>NOTA:</strong> Sinergias y daño real de algunas habilidades no visibles por ahora.</p>
+                            <widgetbot
+                            server="1340822674812960859"
+                            channel="1345120551793852486"
+                            width="380"
+                            height="500"
+                            aline="justify"
+                            max width="400px"
+                            max height="500px"
+                            ></widgetbot>
+                        </ul>                        
                     </div>
                 </div>
             </div>
@@ -59,20 +88,19 @@
                 </div>
                 <div class="box-informacion2">
                     <div class="parche">
-                        <h2>Servidor de Blacksoul</h2>
-                        <ul class="detalles2">
-                            <strong>Ip del Servidor:</strong> 
-                        </ul>
-                        <p><strong id="textoACopiar" onclick="copiarTexto()" style="cursor: pointer; color:rgba(255, 255, 0, 0.749);">blacksoul12345</strong></p>
+                        <div class="centrar-contenido">
+                            <h2>Servidor de Blacksoul</h2>
+                            <ul class="detalles2">
+                                <strong>Ip:</strong> 
+                            </ul>
+                            <img src="img/ip.png" alt="">
+                        </div>
+                        <p><strong id="textoACopiar" onclick="copiarTexto()" style="cursor: pointer; color:rgba(255, 255, 0, 0.749);">d2blacksoul.ddns.net</strong></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bloque-1">
-        <img src="imagenes/inter.png" alt="">
-    </div>
-
     <div class="contenedor-rules">
         <div class="box-rules">
             <div class="box-rules1">
@@ -105,8 +133,8 @@
                             <p></p>
                             <li><strong>Cualquier otra regla que no esté definida en este reglamento:</strong> queda a criterio del admin tanto en gravedad como en sancion</li>
                             <p></p>
-                            <p></p>
-                            <p>ATTE. IceHammer (admin)</strong> </p>
+                            <p></p>                     
+                            <p><strong>ATTE. IceHammer (admin)</strong></p>
                         </ul>
                 
                     </div>
@@ -114,23 +142,27 @@
             </div>
         </div>
     </div>
+
     
+
+
     <footer class="footer container">
         <h2 class="titulo-contacto">contacto</h2>
-        <div class="footer-content">
-            <form id="contact-form">
-                <input class="campo" type="text" id="nombre" placeholder="Nombre" required>
-                <input class="campo" type="email" id="email" placeholder="Email" required>
-                <input type="submit" class="btn-2" value="Enviar">
-            </form>
-        </div>
+        <form id="contact-form" class="footer-content">
+            <input class="campo" type="text" id="nombre" placeholder="Nombre" required>
+            <input class="campo" type="email" id="email" placeholder="Correo" required>
+            <input type="submit" class="btn-2" value="Enviar">
+        </form>
         <div class="footer-txt">
             <p>BY SHIIKO</p>
         </div>
         
     </footer>
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
     <script src="script.js"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </body>
 </html>
